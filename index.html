@@ -122,10 +122,7 @@
         <!--  -->
         <div id="search" class="mt-10">
           <div id="tabs" class="flex flex-wrap gap-1 text-sm">
-            <button
-              data-tab="buy"
-              class="tab rounded-t-md bg-neutral-200 px-5 py-2"
-            >
+            <button data-tab="buy" class="tab rounded-t-md bg-white px-5 py-2">
               Buy
             </button>
             <button
@@ -178,6 +175,7 @@
                 id=""
                 class="rounded border border-neutral-300 px-3 py-2.5 text-sm"
               >
+                <option value="">Price (Range)</option>
                 <option value="">$150,000 - $280,000</option>
                 <option value="">$280,000 - $500,000</option>
                 <option value="">$500,000 - $1,000,000</option>
@@ -195,10 +193,30 @@
                 <option value="">Villa</option>
               </select>
             </div>
+
+            <div
+              class="flex flex-wrap items-center justify-between mt-4 gap-3 text-sm"
+            >
+              <span class="text-neutral-600"> + More options</span>
+
+              <div class="flex items-center gap-4">
+                <button id="clearBtn" class="text-neutral-600 hover:text-black">
+                  Clear Filters
+                </button>
+
+                <a
+                  href=""
+                  class="rounded bg-black text-white py-2.5 px-5 hover:bg-neutral-700"
+                >
+                  Show properties
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+    <section></section>
   </body>
 </html>
-
